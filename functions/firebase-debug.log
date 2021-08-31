@@ -1,0 +1,47 @@
+[debug] [2021-06-16T03:40:39.692Z] ----------------------------------------------------------------------
+[debug] [2021-06-16T03:40:39.694Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\PREDATOR\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js functions:shell
+[debug] [2021-06-16T03:40:39.694Z] CLI Version:   9.13.0
+[debug] [2021-06-16T03:40:39.694Z] Platform:      win32
+[debug] [2021-06-16T03:40:39.694Z] Node Version:  v14.5.0
+[debug] [2021-06-16T03:40:39.695Z] Time:          Wed Jun 16 2021 09:10:39 GMT+0530 (India Standard Time)
+[debug] [2021-06-16T03:40:39.695Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2021-06-16T03:40:39.702Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-06-16T03:40:39.703Z] > authorizing via signed-in user (shivansh211299@gmail.com)
+[debug] [2021-06-16T03:40:39.703Z] [iam] checking project clone-31658 for permissions ["firebase.projects.get"]
+[debug] [2021-06-16T03:40:39.705Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/clone-31658:testIamPermissions  
+ {"permissions":["firebase.projects.get"]}
+[debug] [2021-06-16T03:40:41.474Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Wed, 16 Jun 2021 03:40:41 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=1328","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[warn] !  Your requested "node" version "10" doesn't match your global version "14" {"metadata":{"emulator":{"name":"functions"},"message":"Your requested \"node\" version \"10\" doesn't match your global version \"14\""}}
+[debug] [2021-06-16T03:40:43.559Z] defaultcredentials: writing to file C:\Users\PREDATOR\AppData\Roaming\firebase\shivansh211299_gmail_com_application_default_credentials.json
+[debug] [2021-06-16T03:40:43.561Z] DEBUG: Setting GAC to C:\Users\PREDATOR\AppData\Roaming\firebase\shivansh211299_gmail_com_application_default_credentials.json
+[debug] [2021-06-16T03:40:43.563Z] > refreshing access token with scopes: []
+[debug] [2021-06-16T03:40:43.563Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-06-16T03:40:43.823Z] <<< HTTP RESPONSE 200 {"expires":"Mon, 01 Jan 1990 00:00:00 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","date":"Wed, 16 Jun 2021 03:40:44 GMT","pragma":"no-cache","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-06-16T03:40:43.841Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/clone-31658/adminSdkConfig [none]
+[debug] [2021-06-16T03:40:44.514Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/clone-31658/adminSdkConfig 200
+[debug] [2021-06-16T03:40:44.514Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/clone-31658/adminSdkConfig {"projectId":"clone-31658","storageBucket":"clone-31658.appspot.com","locationId":"us-central"}
+[debug] [2021-06-16T03:40:44.522Z] [functions] Watching "C:\Users\PREDATOR\Desktop\amazon-clone\functions" for Cloud Functions...
+[debug] [2021-06-16T03:40:44.533Z] DEBUG: [worker-pool] addWorker(~diagnostic~)
+[debug] [2021-06-16T03:40:44.533Z] DEBUG: [worker-pool] Adding worker with key ~diagnostic~, total=1
+[debug] [2021-06-16T03:40:44.533Z] DEBUG: [worker-pool] submitWork(triggerId=)
+[debug] [2021-06-16T03:40:44.533Z] DEBUG: [worker-~diagnostic~-c5f9a6e9-daec-4ad6-a38a-6f387189250e]: Assigning socketPath: \\?\pipe\C:\Users\PREDATOR\Desktop\amazon-clone\functions\14684
+[debug] [2021-06-16T03:40:44.534Z] DEBUG: [worker-~diagnostic~-c5f9a6e9-daec-4ad6-a38a-6f387189250e]: BUSY
+[debug] [2021-06-16T03:40:44.723Z] DEBUG: [runtime-status] [14684] Functions runtime initialized. {"cwd":"C:\\Users\\PREDATOR\\Desktop\\amazon-clone\\functions","node_version":"14.5.0"}
+[debug] [2021-06-16T03:40:44.723Z] DEBUG: [runtime-status] [14684] Disabled runtime features: undefined
+[debug] [2021-06-16T03:40:44.726Z] DEBUG: [runtime-status] [14684] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.13.0","resolution":"C:\\Users\\PREDATOR\\Desktop\\amazon-clone\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2021-06-16T03:40:44.728Z] DEBUG: [runtime-status] [14684] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.11.0","resolution":"C:\\Users\\PREDATOR\\Desktop\\amazon-clone\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2021-06-16T03:40:44.729Z] DEBUG: [runtime-status] [14684] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.11.0","resolution":"C:\\Users\\PREDATOR\\Desktop\\amazon-clone\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2021-06-16T03:40:44.730Z] DEBUG: [runtime-status] [14684] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}]
+[debug] [2021-06-16T03:40:44.731Z] DEBUG: [runtime-status] [14684] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.11.0","resolution":"C:\\Users\\PREDATOR\\Desktop\\amazon-clone\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2021-06-16T03:40:44.770Z] DEBUG: [runtime-status] [14684] Checked functions.config() {"config":{}}
+[debug] [2021-06-16T03:40:44.770Z] DEBUG: [runtime-status] [14684] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"3.11.0","resolution":"C:\\Users\\PREDATOR\\Desktop\\amazon-clone\\functions\\node_modules\\firebase-functions\\lib\\index.js"}}
+[debug] [2021-06-16T03:40:44.771Z] DEBUG: [runtime-status] [14684] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.11.0","resolution":"C:\\Users\\PREDATOR\\Desktop\\amazon-clone\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2021-06-16T03:40:44.772Z] DEBUG: [runtime-status] [14684] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.13.0","resolution":"C:\\Users\\PREDATOR\\Desktop\\amazon-clone\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2021-06-16T03:40:44.772Z] DEBUG: [runtime-status] [14684] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.11.0","resolution":"C:\\Users\\PREDATOR\\Desktop\\amazon-clone\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2021-06-16T03:40:44.773Z] DEBUG: [runtime-status] [14684] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.13.0","resolution":"C:\\Users\\PREDATOR\\Desktop\\amazon-clone\\functions\\node_modules\\firebase-admin\\lib\\index.js"}}
+[debug] [2021-06-16T03:40:44.928Z] [functions[us-central1-api]] http function initialized (http://localhost:5000/clone-31658/us-central1/api).
+[info] i  functions: Loaded functions: api 
+[warn] !  functions: The following emulators are not running, calls to these services will affect production: firestore, database, pubsub, storage 
+[debug] [2021-06-16T03:40:44.940Z] DEBUG: [worker-~diagnostic~-c5f9a6e9-daec-4ad6-a38a-6f387189250e]: IDLE
